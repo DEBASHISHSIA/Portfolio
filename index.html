@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/user-solid.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b3c2b5fecc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- -----------Header---------- -->
+    <div id="header">
+        <div class="container">
+            <!-- ----------Navbar----------- -->
+            <nav>
+                <img src="" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Servies</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <!-- ----------Profile_Name_section----------- -->
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Debashish Sia</span><br> from Google</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------About---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abot-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="abot-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly motivated and detail-oriented Software Developer with expertise in front-end and back-end technologies, including HTML, CSS, JavaScript, Java, SQL, MySQL, MongoDB, Node.js, and Express.js. Adept at designing, developing, and implementing scalable web applications, with a strong passion for learning new technologies and delivering efficient solutions. Aiming to contribute to impactful projects in a dynamic and innovative environment, preferably in multinational companies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Core Java | Java Frameworks | Database Integration | Web Development| Version Control</li>
+                            <li><span>front-end</span><br>HTML5 | CSS3 |JavaScript (ES6+) | Responsive Design | Cross-Browser Compatibility | CSS Frameworks  (Bootstrap, Tailwind CSS )</li>
+                            <li><span>Back-end</span><br>Backend Development | RESTful APIs | Database Management | Server-Side Programming | Node.js | Express.js | API Integration | Middleware</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Team Lead at Google </li>
+                            <li><span>2019 - 2021</span><br>Product Manager at Startup LLC.</li>
+                            <li><span>2017 - 2019</span><br>System Engineer at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>BTech</li>
+                            <li><span>2016</span><br>12th</li>
+                            <li><span>2014</span><br>Schooling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae ex debitis nemo quis,
+                        est laudantium eligendi voluptate!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae ex debitis nemo quis,
+                        est laudantium eligendi voluptate!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestiae ex debitis nemo quis,
+                        est laudantium eligendi voluptate!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione reprehenderit.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione reprehenderit.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione reprehenderit.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------------------Contact_Section----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@mail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 1234567891</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Debashish. Made with <i class="fa-sharp fa-solid fa-heart"></i> by Debashish_Sia</p>
+        </div>
+    </div>
+
+    <!-- ------------This is for the Google sheets connetion------- -->
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyk-zC0cCa777dvM46mPUoaFlF28s1EZc09WzSB_qoptuOTwGoAud5jH3Jm8XRrEkNl/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message sent successfully"; setTimeout(function(){
+                msg.innerHTML = ""
+            }, 3000)
+            form.reset()
+        }) 
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
